@@ -23,7 +23,7 @@ Installing
 
     git clone git://github.com/gabriellima/gitstuff.git
     cd gitstuff
-    sudo cp * /usr/local/bin/
+    sudo cp ./scripts/* /usr/local/bin/
 
 Using
 =======
