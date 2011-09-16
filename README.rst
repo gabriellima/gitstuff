@@ -5,13 +5,13 @@ Gitstuff - This likely will save your time
 Needs (If any of your answers are yes, than this project is for you!)
 =====================================================================
 
-1) Do you have a work folder with many subfolders managed by git?
+1) Do you have a work folder with many subfolders managed by git, each one with many remote branches?
 
-    .. highlight:: shell
+.. highlight:: shell
 
-    ::
+::
 
-        git up-dirs
+    git up-dirs
 
 
 Installing
