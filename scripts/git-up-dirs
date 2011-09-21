@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# This is where I want my script to start.
-cd .
-
 # Let the person running the script know what's going on.
 echo -e "\n\033[1mPulling in latest changes for all repositories...\033[0m\n"
 
