@@ -1,4 +1,5 @@
 #!/bin/bash
+# git-up-dirs
 
 # Let the person running the script know what's going on.
 echo -e "\n\033[1mPulling in latest changes for all repositories...\033[0m\n"
