@@ -4,15 +4,17 @@
 # Let the person running the script know what's going on.
 echo -e "\n\033[1mPulling in latest changes for all repositories...\033[0m\n"
 
-# Find all directories here - that are at least 1 level down, but don't go any further than 1 directory.
-# Go into those directories and pull the repository.
-for i in $(find . -maxdepth 1 -mindepth 1 -type d); do
-    cd $i;
+# Find all git directories here and go into those
+# directories and pull all branches from the repository.
+
+current=`pwd` #Save the path where the script was run
+for i in $(find . -type d -name '.git'); do
+    cd $i/..;
     if [ -f .git/config ] && [ "`git remote -v`" != "" ]; then
         echo -e "\033[1m"+$i+"\033[0m";
         git pull --all
     fi
-    cd ..
+    cd $current
 done
 echo -e "\n-----------------------------\n"
 
